@@ -14,6 +14,9 @@
         android:theme="@style/Theme.QuiteSmoking"
         tools:targetApi="31">
         <activity
+            android:name=".ProfileSetting"
+            android:exported="false" />
+        <activity
             android:name=".AchievementActivity"
             android:exported="false" />
         <activity
