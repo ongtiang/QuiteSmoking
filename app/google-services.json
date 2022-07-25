@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1050565781897",
+    "project_id": "software-development-2022",
+    "storage_bucket": "software-development-2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050565781897:android:d83242069058a64f2c9958",
+        "android_client_info": {
+          "package_name": "com.example.quitesmoking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050565781897-d2e3b8ub25b5745ogfmk31ub4rn5clnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCudKAcAfeN1TpKdXgme7pdmhRcuaD8QCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050565781897-d2e3b8ub25b5745ogfmk31ub4rn5clnj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
