@@ -42,10 +42,10 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     private void scheduleNotification(){
-//        Intent intent = new Intent(SplashScreenActivity.this,ScheduleNotification.class);
-//        @SuppressLint("UnspecifiedImmutableFlag") PendingIntent pendingIntent = PendingIntent.getBroadcast(SplashScreenActivity.this,0,intent,0);
-//        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-//
-//        alarmManager.set(AlarmManager.RTC_WAKEUP,System.currentTimeMillis()+10000,pendingIntent);
+        Intent intent = new Intent(SplashScreenActivity.this,ScheduleNotification.class);
+        @SuppressLint("UnspecifiedImmutableFlag") PendingIntent pendingIntent = PendingIntent.getBroadcast(SplashScreenActivity.this,0,intent,0);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+
+        alarmManager.set(AlarmManager.RTC_WAKEUP,System.currentTimeMillis()+10000,pendingIntent);
     }
 }

@@ -73,6 +73,7 @@ public class AddGoalActivity extends AppCompatActivity implements AdapterView.On
             updates.put("achieved", false);
             fStore.collection("User").document(userID).collection("Goal").add(updates);
             Toast.makeText(AddGoalActivity.this, "Goal Added!", Toast.LENGTH_SHORT).show();
+            finish();
         });
     }
 
