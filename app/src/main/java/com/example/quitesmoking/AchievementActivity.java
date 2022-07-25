@@ -35,29 +35,29 @@ public class AchievementActivity extends AppCompatActivity {
 
     private void setUpAchievementRecyclerView() {
 
-//        Query query = db.collection("User").document(userID).collection("Goal")
-//                .whereEqualTo("achieved", true);
-//
-//        FirestoreRecyclerOptions<Goal> options = new FirestoreRecyclerOptions.Builder<Goal>()
-//                .setQuery(query, Goal.class)
-//                .build();
-//
-//        achievementAdapter = new AchievementAdapter(options);
-//
-//        achievementRecyclerView.setHasFixedSize(true);
-//        achievementRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-//        achievementRecyclerView.setAdapter(achievementAdapter);
+        Query query = db.collection("User").document(userID).collection("Goal")
+                .whereEqualTo("achieved", true);
+
+        FirestoreRecyclerOptions<Goal> options = new FirestoreRecyclerOptions.Builder<Goal>()
+                .setQuery(query, Goal.class)
+                .build();
+
+        achievementAdapter = new AchievementAdapter(options);
+
+        achievementRecyclerView.setHasFixedSize(true);
+        achievementRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        achievementRecyclerView.setAdapter(achievementAdapter);
     }
 
     @Override
     public void onStart() {
         super.onStart();
-//        achievementAdapter.startListening();
+        achievementAdapter.startListening();
     }
 
     @Override
     public void onStop() {
         super.onStop();
-//        achievementAdapter.stopListening();
+        achievementAdapter.stopListening();
     }
 }

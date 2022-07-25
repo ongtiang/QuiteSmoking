@@ -64,14 +64,14 @@ public class HomePage extends AppCompatActivity {
         userID = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
 
         userName.setOnClickListener(v -> {
-//            Intent intent = new Intent(HomePage.this, ProfileSetting.class);
-//            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//            startActivity(intent);
+            Intent intent = new Intent(HomePage.this, ProfileSetting.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
         });
 
         buttonAchievement.setOnClickListener(view -> {
-//            Intent i = new Intent(HomePage.this, AchievementActivity.class);
-//            startActivity(i);
+            Intent i = new Intent(HomePage.this, AchievementActivity.class);
+            startActivity(i);
         });
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -160,28 +160,28 @@ public class HomePage extends AppCompatActivity {
             }
 
 
-//            if(goalEndDate!=0){
-//
-//                long milliseconds3 = goalEndDate - milliseconds2;
-//
-//                if(milliseconds3<=0){
-//
-//                    FirebaseFirestore db = FirebaseFirestore.getInstance();
-//                    Map<String, Object> hashMap = new HashMap<>();
-//                    hashMap.put("achieved",true);
-//                    db.collection("User").document(userID).collection("Goal").document(goalID).update(hashMap).addOnSuccessListener(unused -> {
-//                        Intent intent = new Intent(HomePage.this,ScheduleNotification2.class);
-//                        @SuppressLint("UnspecifiedImmutableFlag") PendingIntent pendingIntent = PendingIntent.getBroadcast(HomePage.this,0,intent,0);
-//                        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-//
-//                        alarmManager.set(AlarmManager.RTC_WAKEUP,milliseconds2,pendingIntent);
-//
-//                        goalEndDate = (long)0;
-//                    });
-//
-//                }
-//
-//            }
+            if(goalEndDate!=0){
+
+                long milliseconds3 = goalEndDate - milliseconds2;
+
+                if(milliseconds3<=0){
+
+                    FirebaseFirestore db = FirebaseFirestore.getInstance();
+                    Map<String, Object> hashMap = new HashMap<>();
+                    hashMap.put("achieved",true);
+                    db.collection("User").document(userID).collection("Goal").document(goalID).update(hashMap).addOnSuccessListener(unused -> {
+                        Intent intent = new Intent(HomePage.this,ScheduleNotification2.class);
+                        @SuppressLint("UnspecifiedImmutableFlag") PendingIntent pendingIntent = PendingIntent.getBroadcast(HomePage.this,0,intent,0);
+                        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+
+                        alarmManager.set(AlarmManager.RTC_WAKEUP,milliseconds2,pendingIntent);
+
+                        goalEndDate = (long)0;
+                    });
+
+                }
+
+            }
 
 
             double totalMoneySave2 = totalMoneySave * diffDays;
