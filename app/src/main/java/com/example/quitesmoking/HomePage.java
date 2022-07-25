@@ -64,14 +64,14 @@ public class HomePage extends AppCompatActivity {
         userID = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
 
         userName.setOnClickListener(v -> {
-//            Intent intent = new Intent(HomePage.this, ProfileSetting.class);
-//            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//            startActivity(intent);
+            Intent intent = new Intent(HomePage.this, ProfileSetting.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
         });
 
         buttonAchievement.setOnClickListener(view -> {
-//            Intent i = new Intent(HomePage.this, AchievementActivity.class);
-//            startActivity(i);
+            Intent i = new Intent(HomePage.this, AchievementActivity.class);
+            startActivity(i);
         });
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
