@@ -119,8 +119,8 @@ public class HomePage extends AppCompatActivity {
 
 
         imageViewAdd.setOnClickListener(view -> {
-//            Intent intent = new Intent(HomePage.this, AddGoalActivity.class);
-//            startActivity(intent);
+            Intent intent = new Intent(HomePage.this, AddGoalActivity.class);
+            startActivity(intent);
         });
     }
 

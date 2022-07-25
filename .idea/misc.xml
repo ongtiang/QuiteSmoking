@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/User/AndroidStudioProjects/QuiteSmoking/app/src/main/res/layout/activity_home_page.xml" value="0.24635416666666668" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/QuiteSmoking/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/QuiteSmoking/app/src/main/res/layout/activity_add_goal.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/QuiteSmoking/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/QuiteSmoking/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
