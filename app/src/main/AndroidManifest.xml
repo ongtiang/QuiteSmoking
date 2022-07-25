@@ -14,7 +14,22 @@
         android:theme="@style/Theme.QuiteSmoking"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".AchievementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddGoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
